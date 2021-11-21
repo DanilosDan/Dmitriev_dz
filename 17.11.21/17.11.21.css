@@ -1,0 +1,43 @@
+td {
+
+    width: 300px;
+    height: 150px;
+}
+
+.p1 {
+    width: 30px;
+    height: 30px;
+    font-size: 50px;
+   display: inline-block;
+    padding-top: 1px;
+
+}
+
+.p2 {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    float: right;
+
+}
+
+.p3 {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    float: right;
+   padding-top: 25px;
+    padding-right: 27px;
+
+}
+.p4 {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+   padding-bottom: 1px;
+
+}
+a {
+    color: black;
+    text-decoration: none;
+
