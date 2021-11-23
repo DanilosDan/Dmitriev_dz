@@ -8,8 +8,8 @@ body {
 }
 
 .picture {
-    height: 350px;
-    width: 350px;
+    height: 320px;
+    width: 400px;
     float: left;
     padding-left: 40px;
 }
@@ -31,3 +31,41 @@ body {
     padding-left: 250px;
 
 }
+
+section.img {
+    margin-top: 2em;
+    padding-top: 300px;
+}
+section.img h2 {
+        text-align: center;
+    }
+figure img {
+    height: 250px;
+    width: 300px;
+}
+
+div#block1 figcaption, div#block2 figcaption {
+        color: black;
+        font-size: 100%;
+        text-align: center;
+}
+#block1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+#block2 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+@media screen and (max-width: 400px){
+    #block1 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #block2 {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);}
+}
+
