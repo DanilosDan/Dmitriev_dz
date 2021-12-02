@@ -1,11 +1,12 @@
 <?php
- function day_night ()
-$a=date( "H:i", strtotime("+2 Hour") );
-$day=("8:00");
-$night=("20:00");
-    if ($a<$day or $a>$night) {
+    function day_night() {
+        $a=date( "H:i", strtotime("+2 Hour") );
+        $day=("8:00");
+        $night=("20:00");
+         if ($a<$day or $a>$night) {
         echo  '<body style="background-color:darkslateblue">';
-    }
+    }}
+    day_night()
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +20,18 @@ $night=("20:00");
 <body>
 
     <header class="header">
-        <img class="shaka" src="shaka.jpg" alt="no">
+        <?php
+         function date_b(){
+            $my_date=strtotime ("06.07.1989");
+            echo $my_date. '<br>';
+            $now=date("d:m:o");
+            echo $now;
+ /*           $c=$now-$my_date;
+            echo $c;*/
+         }
+        date_b()
+        ?>
+<!--        <img class="shaka" src="shaka.jpg" alt="no">-->
     </header>
 
     <div><img class="picture" src="foto.jpg" alt=""></div>
@@ -38,8 +50,7 @@ $night=("20:00");
     <p class="review">Школе факт хочу выразить большую благодарность
     за возможность любому желающему получать новые
     знания и осваивать профессию разработчика.
-    Из минусов, для новичков очень высокий темп и вся
-        информация не успевает уложиться.
+    Из минусов, для новичков очень высокий темп.
     </p>
 
     <section class="img">
